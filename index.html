@@ -2,17 +2,53 @@
 
 <head>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+
+	
+
 	<style>
-		body {
-			font-family: 'helvetica';
-			padding: 30px;
-			font-size: 2vw;
+	
+		* {
+			box-sizing: border-box;
 		}
-		.my_div {
+	
+		@media only screen and (max-width: 600px) {
+				.textbox {
+					width: 100%
+				}
+		}
+		@media only screen and (min-width: 600px) {
+				.textbox {
+					width: 70%
+				}
+		}
+		@media only screen and (min-width: 768px) {
+				.textbox {
+					width: 70%
+				}
+			}
+		}
+	
+	
+	
+
+		
+		body {
+			font-family: 'helvetica', sans-serif;
+			text-border: 20px;
+/* 			font-size: 2vw; */
+		}
+		.greybox {
 			height: 50%;
 			width: 100%;
 			background-color: lightgray;
 		}
+/* 
+		.textbox {
+			width: 70%
+		}
+ */
 	</style>
 
 	<title>Hannah Patrick</title>
@@ -21,18 +57,20 @@
 
 <body>
 
-<div class="my_div">
+	<div class="greybox">
 
-	<p>Hannah Patrick</p>
-	
-	<p>Private tutor for English, Maths, and Philosophy</p>
-	
-	<p>I’m currently a Master’s student in psychology at St Andrews. Before starting my Master’s, I studied PPE at Somerville College, Oxford, and worked in economic regulation and management consultantancy.</p>
-	
-	<p>Write to me at hannah.mbpatrick [at] proton.me</p>
-	
-</div>
-	
+		<div class="textbox">
+
+			<p>Hannah Patrick</p>
+			
+			<p>Private tutor for English, Maths, and Philosophy</p>
+			
+			<p>I’m currently a Master’s student in psychology at St Andrews. Before starting my Master’s, I studied PPE at Somerville College, Oxford, and worked in economic regulation and management consultantancy.</p>
+			
+			<p>Write to me at hannah.mbpatrick [at] proton.me</p>
+			
+		</div>
+	</div>
 </body>
 
 </html>
